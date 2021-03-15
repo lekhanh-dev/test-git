@@ -1,5 +1,2 @@
-<<<<<<< HEAD
 this is branch a (update)
-=======
 this is branch b
->>>>>>> b
