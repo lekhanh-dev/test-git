@@ -1,2 +1,2 @@
-this is branch a (update)
-this is branch b
+this is branch a (update 2)
+
