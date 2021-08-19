@@ -14,7 +14,7 @@
     "replicas": {
       "staging": 1,
       "production": 2
-    },
+    },  cac
     "config_remote_keys": [
       "/admin/conf.toml",
       "/database/redis/conf.toml",
