@@ -1,3 +1,4 @@
 loẻm    
 lpp_type: có 4 value api, dms, consumer, scheduler tương ứng với 4 loại services
 node_type: mặc định không cần set giá trị này, chỉ set khi xác định sẽ cần services nằm ở node_type tương ứng trên kubernetes
+edit
