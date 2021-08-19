@@ -1,0 +1,33 @@
+{
+  "allow_generate_jenkinsfile": true,
+  "app_type": "api",
+  "node_type": "payment",
+  "build": {
+    "cmd_bin_dir": "sbase/storefront-api/checkout-api",
+    "image_name": "registry.beeketing.com/api/sbase-sf-checkout-api",
+    "docker_file": "Dockerfile_libvips"
+  },
+  "deploy": {
+    "namespace": "cc",
+    "service_name": "checkout-api",
+    "dev_expose_port": 30043,
+    "replicas": {
+      "staging": 1,
+      "production": 2
+    },
+    "config_remote_keys": [
+      "/admin/conf.toml",
+      "/database/redis/conf.toml",
+      "/database/rabbitmq/conf.toml",
+      "/admin/api/conf.toml",
+      "/api/checkout-sf-api/conf.toml",
+    ]
+  },
+  "deploy_branches": [
+    {
+      "namespace": "default",
+      "env": "dev",
+      "branch": "dev"
+    }
+  ]
+}
