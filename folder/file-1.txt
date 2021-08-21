@@ -1,4 +1,5 @@
 {
+"Sua:
   "allow_generate_jenkinsfile": true,
   "app_type": "api",
   "node_type": "payment",
